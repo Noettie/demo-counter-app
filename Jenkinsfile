@@ -16,7 +16,7 @@ pipeline{
             
                 stript{
                 
-                   withSonarQubeEnv(credentialsId: 'sonar-token') {
+                  withSonarQubeEnv(credentialsId: 'sonar-token') {
                 
                    sh 'mvn clean package sonar:sonar'
                  }
