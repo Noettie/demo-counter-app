@@ -9,6 +9,7 @@ pipeline{
             agent{
                 
                 docker {
+                    docker.withServer('jenkins') {
                     image 'maven'
                 }   
             }         
