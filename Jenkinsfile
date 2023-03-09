@@ -10,6 +10,7 @@ pipeline{
                 
                 docker {
                     image 'maven'
+                    args '-v $HOME:/home/jenkins'
                 }   
             }         
             steps{
