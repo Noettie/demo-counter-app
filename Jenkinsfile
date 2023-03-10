@@ -8,8 +8,7 @@ pipeline{
             
             agent{
                 
-                docker {
-                    docker.withServer('jenkins') {
+                docker.withServer('jenkins') {
                     image 'maven'
                 }   
             }         
@@ -25,5 +24,4 @@ pipeline{
             }
         }
     }
-}
 }
