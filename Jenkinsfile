@@ -4,7 +4,7 @@ pipeline{
     
     stages{
         
-        stage('sonaar quality check'){
+        stage('sonar quality check'){
             
             agent{
                 
